@@ -1,0 +1,80 @@
+{
+    "code": 0,
+    "message": "",
+    "result": {
+        "custom_enter": [],
+        "logs": {
+            "cp": {
+                "pano_id": 88024572
+            },
+            "pageName": "Ershou_Web_Property_View_PanoramaWubaViewV2Page",
+            "plat": "1"
+        },
+        "notification": {
+            "biz": "ESF",
+            "headline": "权责声明",
+            "items": [
+                {
+                    "content": "标尺：该房源VR中，标尺展示的数据，是实地拍摄后技术生成，与实际测量可能存在差异。请以产权证明或专业测绘为准。<br><br>户型图/3D模型：该房源VR中，户型图及3D模型为参考图。其中户型结构、面积、高度等信息，是实地拍摄采集后技术生成，非国家专业测绘机构测量所得，与真实现状及产权证明呈现的内容可能存在差异。请以产权证明或专业机构测量结果为准。<br>",
+                    "title": "一、免责声明"
+                },
+                {
+                    "content": "本网站“VR看房”的相关技术由上海瑞家信息技术有限公司及其相关服务可能存在的运营关联单位、58同城平台（以下简称为“58同城”）提供，语音服务由合作平台的专业经纪人或顾问团队提供。其中，58同城平台，是指北京五八信息技术有限公司及其关联公司旗下运营之58同城网站（www.58.com)、58同城无线站点（包括wap.58.com,m.58.com）及58同城移动应用软件（APP）、中华英才网（chinahr.com）、赶集网（ganji.com）等网站及客户端，58同城平台系专注于房地产行业为用户提供房产信息存储空间及网络推广服务的互联网平台。<br>1.“临感”为58同城所在公司及其关联公司的已获授权商标或在申请中商标，受法律保护，任何人不得擅自使用或恶意抢注。凡侵犯本公司商标权、版权等知识产权的，58同城将依法追究其相关法律责任。<br>2.58同城平台所刊登的资料信息（包括但不限于编码、文字、图表、图片、数据、报告、标识、按钮图标、图像、声音文件片段、数据编辑和软件）均是58同城的财产，本平台上所有内容的汇编为58同城所有，受中国和国际版权法的保护。本平台上所有软件都是58同城或其关联公司或其软件供应商的财产，受中国和国际版权法的保护。未经58同城的明确书面许可，任何第三方不得为任何商业目的或非著作权第24条规定的目的或方式获取或使用58同城网站的任何部分或通过58同城网站可直接或间接获得的任何内容、服务或资料。任何第三方以任何方式，和/或以任何形式对58同城网站的任何部分进行发表、复制、转载、更改、引用、链接、下载或以其他方式进行使用，或向任何其他第三方提供获取58同城网站任何内容的渠道，则对58同城网站的使用权将立即终止，且任何第三方必须按照58同城的要求，归还或销毁使用58同城网站任何部分的内容所创建的资料的任何副本。<br>3.除法律另有强制性规定外，未经58同城明确的特别书面许可，任何单位或个人不得以任何方式非法地全部或部分复制、传播、展示、镜像、上载、下载、转载、引用、链接、抓取或以其他方式使用58同城平台的信息内容及相关资料，否则，58同城有权追究其法律责任。<br>4.58同城平台以下内容不可任意转载：<br>1）本平台内发布的所有信息；<br>2）已作出不得转载或未经许可不得转载声明的内容；<br>3）本平台中特有的图形、标志、页面风格、编排方式、程序、图像、影音资料等；<br>4）本平台中必须具有特别授权或具有注册用户资格方可知晓的内容；<br>5）其他法律不允许或本平台认为不适合转载的内容。<br>5.对于不当引用58同城网站内容而引起的纷争等或因纠纷等造成的任何损失，58同城不承担相关法律责任。对不遵守本声明的用户或其他违法、恶意使用58同城平台内容者，58同城保留追究其法律责任的权利。<br>",
+                    "title": "二、产权声明"
+                }
+            ],
+            "site": "WUBA"
+        },
+        "page_config": {
+            "city_id": 0,
+            "client_support": 0,
+            "is_annual_inspire": 0,
+            "is_auto_voice": 0,
+            "is_from_activity": 0,
+            "is_history": 0,
+            "is_open_ai_house": 0,
+            "is_ringback_music": 0,
+            "is_show_activestate": 0,
+            "is_show_guesslike": 0,
+            "is_show_recall": 0,
+            "is_show_tabbar": 0,
+            "is_show_vr_guide": 0,
+            "is_take_look": 0,
+            "is_titlebar": 0,
+            "show_red_packet": 0,
+            "user_type": 0
+        },
+        "vrhouse_config": {
+            "community_anchor_jump": {
+                "community_attribute": "未央_阿房宫遗址_2015",
+                "community_name": "巨威大秦郡",
+                "community_photo": "500x500.jpg",
+                "jump_action": "&anchor_pano=1",
+                "pano_anchor": ""
+            },
+            "hide_rooms": {
+                "fuzzy_query": false
+            },
+            "hotspot_img": "",
+            "is_area_display": true,
+            "is_hotspot_img_display": true,
+            "is_need_accompany_voice": false,
+            "is_show_big_guide_tab": true,
+            "is_show_compass_direction": true,
+            "is_show_floorplan": true,
+            "is_show_ruler_btn": true,
+            "is_show_vr_btn": true,
+            "mini_stereo_floorplan_default": "2D",
+            "mini_stereo_floorplan_text": "户型图/3D模型",
+            "pano_hotspot_text": "合和致远",
+            "ruler_btn_default_value": false,
+            "tv_url": "",
+            "vrchat_avatar_default_b": "",
+            "vrchat_avatar_default_c": "",
+            "vrchat_role_b": "",
+            "vrchat_role_c": ""
+        }
+    },
+    "server_time": "2023.02.14",
+    "status": "true"
+}

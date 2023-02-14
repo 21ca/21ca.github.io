@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="85px" viewBox="0 0 40 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>03-2</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DDE5EA" offset="0%"></stop>
+            <stop stop-color="#DDE6EA" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#DDE5EA" offset="0%"></stop>
+            <stop stop-color="#DDE6EA" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-1692.000000, -762.000000)">
+            <g id="编组-25" transform="translate(1693.000000, 763.000000)">
+                <g id="编组-7">
+                    <polygon id="路径-46" fill="#FFFFFF" points="1.0421039e-12 0 1.0421039e-12 67.6103023 18.519425 83 1.05160325e-12 67.6103023 18.519425 83 38 83 38 13 17.7120148 0"></polygon>
+                    <polygon id="路径-46" stroke="#CCD9E1" stroke-linejoin="round" points="0 0 0 67.6944535 19 83 19 12.7643841"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.353133429" points="17.4967909 14.0915212 17.4967909 80.4465026 1.13318492 67.3983202 1.13318492 3.04498366"></polygon>
+                    <polygon id="路径-47" stroke="#CCD9E1" stroke-linejoin="round" points="0 1.57950042e-13 18.4061966 9.23705556e-14 38 13 19.1744529 13"></polygon>
+                    <path d="M9,6 L27.4061966,6 L9,6 Z" id="路径-47" stroke="#CCD9E1" stroke-linejoin="round"></path>
+                    <polygon id="路径-48" stroke="#CCD9E1" stroke-linejoin="round" points="19 83 38 83 38 13 19 13"></polygon>
+                    <polygon id="路径-48" fill="url(#linearGradient-2)" fill-rule="nonzero" opacity="0.668861026" points="20.4815863 82 36.4797339 82 36.4797339 14.5612826 20.4815863 14.5612826"></polygon>
+                </g>
+                <path d="M9.5,75.1609952 L9.5,6 L9.5,75.1609952 Z" id="路径-47" stroke="#CCD9E1" stroke-linejoin="round" transform="translate(9.500000, 40.580498) scale(-1, 1) translate(-9.500000, -40.580498) "></path>
+                <path d="M6.5,39.5804976 L6.5,25.5804976 L6.5,39.5804976 Z" id="路径-47" stroke="#CCD9E1" stroke-linejoin="round" transform="translate(6.500000, 32.580498) scale(-1, 1) translate(-6.500000, -32.580498) "></path>
+                <path d="M12.5,42.5804976 L12.5,28.5804976 L12.5,42.5804976 Z" id="路径-47" stroke="#CCD9E1" stroke-linejoin="round" transform="translate(12.500000, 35.580498) scale(-1, 1) translate(-12.500000, -35.580498) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

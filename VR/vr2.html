@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>全景页</title>
+    <!--<link rel="Shortcut Icon" href="https://pages.anjukestatic.com/usersite/touch/img/favicon-wb-new.ico" type="image/x-icon"/>-->
+    <meta
+            key="viewport"
+            name="viewport"
+            content="width=device-width,initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <!--
+    <link rel="dns-prefetch" href="//j1.58cdn.com.cn">
+    <link rel="dns-prefetch" href="//c1.58cdn.com.cn">
+    <link rel="dns-prefetch" href="//pages.anjukestatic.com">
+    <link rel="dns-prefetch" href="//pic7.ajkimg.com"> -->
+    <link href="./index.0c63752a.css" rel="stylesheet"/>
+    
+
+    
+
+    
+
+    <script src="bundle.min.js"></script>
+    
+</head>
+<body>
+<div id="root"></div>
+
+        <style>
+                #preload-page{
+                        position: fixed;
+                        z-index: 65534;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #fff;
+                        box-sizing: border-box;
+                        transition: opacity linear 500ms;
+                        pointer-events: none;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                }
+                .preload-page-tips{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        font-family: PingFangSC-Regular,-apple-system,sans-serif;
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        color: #CAD7E0;
+                        text-align: center;
+                        padding-bottom: 44px;
+                        padding-bottom: calc(constant(safe-area-inset-bottom) + 44px);
+                        padding-bottom: calc(env(safe-area-inset-bottom) + 44px);
+                }
+                @keyframes logoShow {
+                        0%{
+                                opacity: 0;
+                                transform: translate(0, 0);
+                        }
+                        50%{
+                                opacity: 1;
+                                transform: translate(0, -25%);
+                        }
+                        100%{
+                                opacity: 1;
+                                transform: translate(0, -50%);
+                        }
+                }
+                #preload-page-logo{
+                        position: absolute;
+                        padding-top: 59%;
+                        top: 0;
+                        left: 50%;
+                        width: 46.1333333%;
+                        transform: translate(-50%);
+                        box-sizing: content-box;
+                }
+                #preload-page-logo>img{
+                        width: 100%;
+                        opacity: 0;
+                        animation: logoShow 1s linear forwards;
+                }
+                @keyframes lightRotate {
+                        0%{
+                                opacity: 0;
+                                transform: scale(0.8) rotate(30deg);
+                        }
+                        10%{
+                                opacity: 1;
+                                transform: scale(0.8) rotate(24deg);
+                        }
+                        100%{
+                                opacity: 1;
+                                transform: scale(0.8) rotate(-30deg);
+                        }
+                }
+                #preload-page-light{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding-top: 66.666667%;
+                        width: 126.133333%;
+                        box-sizing: content-box;
+                }
+                #preload-page-light>img{
+                        width: 100%;
+                        transform: scale(0.8);
+                        transform-origin: top right;
+                        animation: lightRotate 4s linear infinite;
+                }
+                @media screen and (min-width: 600px) {
+                        #preload-page{
+                                background-size: 50%;
+                                background-position: center;
+                        }
+                        #preload-page-logo{
+                                width: 32%;
+                                padding-top: 23%;
+                        }
+                        #preload-page-light{
+                                width: 63.0606061%;
+                                padding-top: 21.666667%;
+                                padding-right: 25%;
+                        }
+                        .preload-page-tips{
+                                display: none;
+                        }
+                }
+        </style>
+<!--        <div id="preload-page" >-->
+<!--                <div class="preload-page-box">-->
+
+<!--                </div>-->
+<!--                -->
+<!--        </div>-->
+<div id="preload-page">
+        
+        
+                <style type="text/css">
+  #preload-page{
+    background-image: url("preload-vr-bg.svg");
+  }
+  @keyframes upDown {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-50%);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  #preload-page-vr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 113%;
+    padding-left: 32%;
+    width: 10.6666667%;
+    box-sizing: content-box;
+  }
+  #preload-page-vr>img{
+    width: 100%;
+    animation: upDown 3s ease infinite;
+  }
+  @media screen and (min-width: 600px) {
+    #preload-page-vr{
+      padding-top: 38%;
+      padding-left: 41%;
+      width: 5.333333%;
+    }
+  }
+</style>
+<div id="preload-page-logo">
+    <img src="preload-vr-logo.svg" alt="">
+</div>
+<div id="preload-page-vr">
+    <img src="preload-vr-icon.svg" alt="">
+</div>
+        
+        
+
+        <div id="preload-page-light">
+                <img src="preload-light.min.svg" alt="">
+        </div>
+        <div class="preload-page-tips">wifi环境下浏览更顺畅，实际情况以现场实勘为准</div>
+</div>
+<script type="application/javascript">
+        console.time('preloadend')
+        window._panoMask = {
+                closePreload: function() {
+                        var preloadPage = document.getElementById('preload-page')
+                        if (preloadPage) {
+                                preloadPage.style.opacity = '0'
+                                setTimeout(function () {
+                                        preloadPage.remove()
+                                }, 500)
+                        }
+                }
+        }
+</script>
+
+
+<script>
+    window.feCommon = {"guid":"7A8055A7-DFB2-CE31-00F7-SX0207182013","seo_source_type":"1","yun":{"hostname":"pano-pro-server-4-109eea-zhc6w","wcloud_cluster_group":"wb_esf","wcloud_imagefourversion":"4.3.68.0","wcloud_wmonitor_cluster":"pano_pro_server"},"location":{"lat":"","lon":""},"app":{"os":"other","version":"","type":"","value":"","originType":"","originValue":"","originVersion":"","appCommonParams":{},"imei":"","openudid":"","platform":"","APP_TYPES":{"ANJUKE":"anjuke","WUBA":"wuba","WBUTOWN":"wbutown","BROKER":"broker","AJLZ":"ajlz","WEIXIN":"weixin","MINIPROGRAM":"miniprogram"}},"source_h5":{"app":"","ver":"","os":"other","udid2":"","macid":"","guid":""},"auth":{"node_member_id":"0","PPU":""},"cityV2":{"anjuke":{"id":31,"name":"西安","alias":"xa","pinyin":"xa"},"wuba":{"id":483,"name":"西安","alias":"xa","pinyin":""}},"cityGateway":{"anjuke":{"id":31,"name":"西安","alias":"xa","pinyin":"xa"},"wuba":{"id":483,"name":"西安","alias":"xa","pinyin":""}},"clientIP":"210.74.149.155, 211.144.19.94","wconfig":{"102":{"ajk_city":[],"wuba_city":[],"isModule":1,"loadingPage":2,"resource_version":{"js":"assets/index.81be9a30.js","css":"assets/index.23565b9a.css","legacyPolyfill":"assets/polyfills-legacy.92b1a7c8.js","legacyEntry":"assets/index-legacy.82b945e6.js"}}}};
+    
+    
+</script>
+<script type="module" src="index.30349c08.js"></script>
+<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+<script type="module">try{import("_").catch(()=>1);}catch(e){}window.__vite_is_dynamic_import_support=true;</script>
+<script type="module">!function(){if(window.__vite_is_dynamic_import_support)return;console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+<script nomodule id="vite-legacy-polyfill" src="polyfills-legacy.92b1a7c8.js"></script>
+<script nomodule id="vite-legacy-entry" data-src="index-legacy.f02699a8.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+import{r as s,c as i,g as y}from"./index.49f10ce6.js";import"./cls.ebe14fa8.js";import"./index.30349c08.js";function m(t,c){const{points:n}=c;s(t);const r=n.reduce((e,o)=>({x:e.x+o.x/n.length,y:e.y+o.y/n.length}),{x:0,y:0}),a=new window.BMap.Point(r.y,r.x);t.panTo(a),n.forEach(e=>{i({map:t,icon:y(e.type),point:{x:e.x,y:e.y},name:e.name,address:e.distance})})}export{m as init};

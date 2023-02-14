@@ -1,0 +1,1 @@
+import{r,c as s,g as c}from"./index.49f10ce6.js";import"./cls.ebe14fa8.js";import"./index.30349c08.js";function p(n,e){const i=c("origin"),{point:o}=e,t=new window.BMap.Point(Number(o.y),Number(o.x));r(n),s({map:n,icon:i,iconSize:new window.BMap.Size(20,23),point:o,name:o.name,address:o.address}),n==null||n.panTo(t)}export{p as init};
