@@ -1,12 +1,21 @@
 {
-    "urls": [    
-        {
-            "url": "https://21ca.github.io/tv/wuai.json",
+    "urls": [
+         {
+            "url": "http://52bsj.vip:98/wuai",
             "name": "🌝吾爱〔多条线路〕"
         },   
         {
-            "url": "https://21ca.github.io/tv/qiaojijiekou.json",
+            "url": "https://agit.ai/relax/adcc/raw/branch/master/tvbox.json",
             "name": "😵巧技接口〔多条线路〕"
+        }
+        
+        {
+            "url": "https://21ca.github.io/tv/wuai.json",
+            "name": "🌝吾爱〔我的备份〕"
+        },   
+        {
+            "url": "https://21ca.github.io/tv/qiaojijiekou.json",
+            "name": "😵巧技接口〔我的备份〕"
         }
     ]
 }
