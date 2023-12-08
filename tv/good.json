@@ -2,26 +2,70 @@
     "urls": [
          {
             "url": "http://52bsj.vip:98/wuai",
-            "name": "🌝吾爱〔多条线路〕"
+            "name": "吾爱〔多条线路〕"
         },   
-
-       {
+        {
+            "url": "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
+            "name": "小苹果线路"
+        },   
+        {
+            "url": "https://weixine.net/ysc.json",
+            "name": "运输车线路"
+        },  
+        {
+            "url": "https://agit.ai/cyl518/yl/raw/branch/master/ml.json",
+            "name": "胖鸭线路"
+        },  
+        {
             "url": "https://pastebin.com/raw/5NHaxyGR",
             "name": "道长线路"
         },  
-        
         {
             "url": "https://agit.ai/relax/adcc/raw/branch/master/tvbox.json",
-            "name": "😵巧技接口〔多条线路〕"
+            "name": "巧技接口〔多条线路〕"
         },
-        
+        {
+            "url": "https://9xi4o.tk/0725.json",
+            "name": "4K云盘接口"
+        },
+        {
+            "url": "http://pandown.pro/tvbox/tvbox.json",
+            "name": "巧儿接口"
+        },
+        {
+            "url": "http://home.jundie.top:81/top98.json",
+            "name": "俊于线路"
+        },
+        {
+            "url": "https://raw.liucn.cc/box/m.json",
+            "name": "老刘备用"
+        },
+        {
+            "url": "https://download.kstore.space/download/2883/m3u8/dsj/guochan/mp1/1.m3u8",
+            "name": "蚂蚁论坛接口"
+        },
+        {
+            "url": "https://agit.ai/mmmgit/tvbox/raw/branch/main/zzz1.json",
+            "name": "zzz1线路"
+        },
+        {
+            "url": "https://pastebin.com/raw/gtbKvnE1",
+            "name": "老线路一"
+        },
+        {
+            "url": "https://freed.yuanhsing.cf/TVBox/meowcf.json",
+            "name": "老线路二"
+        },
+
+
+
         {
             "url": "https://21ca.github.io/tv/wuai.json",
-            "name": "🌝吾爱〔我的备份〕"
+            "name": "吾爱〔我的备份〕"
         },   
         {
             "url": "https://21ca.github.io/tv/qiaojijiekou.json",
-            "name": "😵巧技接口〔我的备份〕"
+            "name": "巧技接口〔我的备份〕"
         }
     ]
 }
