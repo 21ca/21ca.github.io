@@ -1,0 +1,29 @@
+{ "urls": [{ "url": "https://21ca.github.io/tvboxqq/饭太硬/api.json", "name": "饭太硬" },
+
+{ "url": "https://21ca.github.io/tvboxqq/小米/api.json", "name": "小米" },
+
+{ "url": "https://21ca.github.io/tvboxqq/肥猫/api.json", "name": "肥猫" },
+
+{ "url": "https://21ca.github.io/tvboxqq/PG/api.json", "name": "PG" },
+
+{ "url": "https://21ca.github.io/tvboxqq/香雅情XYQ/api.json", "name": "香雅情XYQ" },
+
+{ "url": "https://21ca.github.io/tvboxqq/道长JS/api.json", "name": "道长JS" },
+
+{ "url": "https://21ca.github.io/tvboxqq/菜妮丝/api.json", "name": "菜妮丝" },
+
+{ "url": "https://21ca.github.io/tvboxqq/南风/api.json", "name": "南风" },
+
+{ "url": "https://21ca.github.io/tvboxqq/骚零/api.json", "name": "骚零" },
+
+{ "url": "https://21ca.github.io/tvboxqq/天天开心/api.json", "name": "天天开心" },
+
+{ "url": "https://21ca.github.io/tvboxqq/荷城茶秀/api.json", "name": "荷城茶秀" },
+
+{ "url": "https://21ca.github.io/tvboxqq/白嫖/api.json", "name": "白嫖" },
+
+{ "url": "https://21ca.github.io/tvboxqq/小胡/api.json", "name": "小胡" },
+
+{ "url": "https://21ca.github.io/tvboxqq/少儿频道/api.json", "name": "少儿频道" },
+
+{ "url": "https://21ca.github.io/tvboxqq/动漫频道/api.json", "name": "动漫频道" }]}
