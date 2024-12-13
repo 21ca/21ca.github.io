@@ -6,28 +6,13 @@ import './pako.min.js';
 // import JSEncrypt from './jsencrypt.js'; // 会导致壳子崩溃的
 import 模板 from './模板.js'
 import {gbkTool} from './gbk.js'
-import './json5.js'
-// 下面是尝试对jinja2库进行更换
-import './jinja.js'
 
-const _jinja2 = cheerio.jinja2;
-cheerio.jinja2 = function (template, obj) {
-    try {
-        return jinja.render(template, obj);
-    } catch (e) {
-        console.log('新的jinja2库渲染失败,换回原始cheerio:' + e.message);
-        return _jinja2(template, obj)
-    }
-};
 // import cheerio from "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/cheerio.min.js";
 // import "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/crypto-js.js";
 // import 模板 from"https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/模板.js";
 // import {gbkTool} from 'https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/gbk.js'
 
 function init_test() {
-    // console.log(typeof(JSON5));
-    // let a = `{'SHOW':'10','UK':'43a7dc59-e87b-449e-8b74-ba40db28e674','albumlist':[{'DC_TARGETID':'30965086','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'17294','aartist':'','ad_subtype':'102,103,501,101,301','ad_type':'1,3,5','albumid':'30965086','artist':'小白不做凤尾','artistid':'10442011','artistpic':'http://img4.kuwo.cn/star/starheads/120/92/53/247071944.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'小白不做凤尾','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/51/40/547190780.jpg','id':'30965086','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/51/40/547190780.jpg','info':'来听听','isstar':'1','lang':'','musiccnt':'37','name':'我的','new':'0','payvalue':'0','pic':'120/51/40/547190780.jpg','pub':'2022-08-28','score':'0','showtime':'','spPrivilege':'0','startype':'有声小说','timing_online':'0000-00-00&nbsp;00:00:00','title':'','vip':'0'},{'DC_TARGETID':'28041980','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'0','aartist':'','ad_subtype':'','ad_type':'','albumid':'28041980','artist':'玄琛','artistid':'9688248','artistpic':'http://img4.kuwo.cn/star/starheads/120/96/39/3155308302.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'玄琛','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/72/16/2510768590.jpg','id':'28041980','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/72/16/2510768590.jpg','info':'我来诉说我的故事，请你认真聆听，做最好的聆听者','isstar':'1','lang':'','musiccnt':'2','name':'我的','new':'0','payvalue':'0','pic':'120/72/16/2510768590.jpg','pub':'2020-08-18','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'','vip':'0'},{'DC_TARGETID':'17245200','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'5529096','aartist':'','ad_subtype':'','ad_type':'','albumid':'17245200','artist':'我和我的家乡','artistid':'5037564','artistpic':'http://img4.kuwo.cn/star/starheads/0/10/27/3738071257.jpg','color':'[#FFD8F3F1,#FF719794]','company':'中青在线','content_type':'0','falbum':'','fartist':'我和我的家乡','finished':'1','hts_img':'https://img2.kuwo.cn/star/albumcover/240/85/51/1350940634.jpg','id':'17245200','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/85/51/1350940634.jpg','info':'《我和我的家乡2》是融媒体音频节目《我和我的家乡》第二季。为解读中国人的乡土情结，汇聚同心追梦的力量。【歌曲篇】每期节目将推出一个主题城市，邀请一位青春正能量明星，演唱与家乡有关的原创或翻唱歌曲，曲传乡音。','isstar':'1','lang':'','musiccnt':'5','name':'我和我的家乡第二季「歌曲篇」','new':'0','payvalue':'0','pic':'120/85/51/1350940634.jpg','pub':'2020-12-25','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'解读中国人的乡土情结','vip':'0'},{'DC_TARGETID':'12854978','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'21482961','aartist':'','ad_subtype':'','ad_type':'','albumid':'12854978','artist':'佛学听我的','artistid':'3651480','artistpic':'http://img4.kuwo.cn/star/starheads/120/21/42/3683883829.jpg','color':'[#FFD8F3F1,#FF719794]','company':'暂无','content_type':'0','falbum':'','fartist':'佛学听我的','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/99/12/1066669641.jpg','id':'12854978','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/99/12/1066669641.jpg','info':'禅音静心：禅茶一味','isstar':'1','lang':'普通话','musiccnt':'407','name':'禅音静心：禅茶一味','new':'0','payvalue':'0','pic':'120/99/12/1066669641.jpg','pub':'2020-02-23','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'禅音静心：禅茶一味','vip':'0'},{'DC_TARGETID':'13884852','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'17396226','aartist':'','ad_subtype':'','ad_type':'','albumid':'13884852','artist':'佛学听我的','artistid':'3651480','artistpic':'http://img4.kuwo.cn/star/starheads/120/21/42/3683883829.jpg','color':'[#FFD8F3F1,#FF719794]','company':'暂无','content_type':'0','falbum':'','fartist':'佛学听我的','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/91/94/4253604466.jpg','id':'13884852','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/91/94/4253604466.jpg','info':'静心听佛乐','isstar':'1','lang':'普通话','musiccnt':'228','name':'静心听佛乐','new':'0','payvalue':'0','pic':'120/91/94/4253604466.jpg','pub':'2020-04-27','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'静心听佛乐','vip':'0'},{'DC_TARGETID':'17172751','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'553401','aartist':'','ad_subtype':'102,103,101,501','ad_type':'1,5','albumid':'17172751','artist':'我和我的家乡','artistid':'5037564','artistpic':'http://img4.kuwo.cn/star/starheads/0/10/27/3738071257.jpg','color':'[#FFD8F3F1,#FF719794]','company':'中青在线','content_type':'0','falbum':'','fartist':'我和我的家乡','finished':'1','hts_img':'https://img2.kuwo.cn/star/albumcover/240/63/45/3978411674.jpg','id':'17172751','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/63/45/3978411674.jpg','info':'《我和我的家乡2》是融媒体音频节目《我和我的家乡》第二季。为解读中国人的乡土情结，汇聚同心追梦的力量。每期节目将推出一个主题城市，邀请一位青春正能量明星，用笔者独有的乡愁情感，配以讲述者也为此乡人的身份，着力刻画该城市的魅力形象，展现一座城的普通百姓生活和经济社会发展。','isstar':'1','lang':'','musiccnt':'11','name':'我和我的家乡第二季「有声篇」','new':'0','payvalue':'0','pic':'120/63/45/3978411674.jpg','pub':'2020-12-21','score':'0','showtime':'2020-12-20','spPrivilege':'0','startype':'娱乐','timing_online':'2020-12-20&nbsp;23:40:00','title':'','vip':'0'},{'DC_TARGETID':'18769609','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'69987','aartist':'','ad_subtype':'101,102,103,501','ad_type':'1,5','albumid':'18769609','artist':'你是我的荣耀','artistid':'6998984','artistpic':'http://img4.kuwo.cn/star/starheads/120/41/44/262468637.jpg','color':'[#FFD8F3F1,#FF719794]','company':'﻿暂无','content_type':'0','falbum':'','fartist':'你是我的荣耀','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/44/72/4080853707.jpg','id':'18769609','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/44/72/4080853707.jpg','info':'﻿《你是我的荣耀》是由王之执导，潘粤明、胡可、王彦霖、杨洋、迪丽热巴、郑合惠子主演的都市爱情剧。该剧改编自顾漫创作的同名小说,主要讲述了人气女星乔晶晶在游戏中与曾经的高中同学于途意外重逢后发生的故事。\\\\\\\\\\\\\\\\\\n;跟随《你是我的荣耀》之声，一起见证航天工程师于途与人气女星乔晶晶，携手砥砺前行成为彼此荣耀的爱情故事！\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;\\\\\\\\\\\\\\\\\\n;','isstar':'1','lang':'普通话','musiccnt':'1','name':'你是我的荣耀','new':'0','payvalue':'0','pic':'120/44/72/4080853707.jpg','pub':'2021-03-05','score':'0','showtime':'2021-03-09','spPrivilege':'0','startype':'有声小说','timing_online':'2021-03-09&nbsp;00:00:00','title':'大明星恋上航天工程师&nbsp;热巴杨洋甜蜜相守','vip':'0'},{'DC_TARGETID':'23641999','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'1292491','aartist':'','ad_subtype':'102,103,501,101,301','ad_type':'1,3,5','albumid':'23641999','artist':'我的存在','artistid':'8102787','artistpic':'http://img4.kuwo.cn/star/starheads/120/31/87/632983033.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'我的存在','finished':'1','hts_img':'https://img2.kuwo.cn/star/albumcover/240/50/6/2193571523.jpg','id':'23641999','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/50/6/2193571523.jpg','info':'为给老驸马冲喜，长亭长公主庶孙迎娶陆家女，新娘子当天却吊死在洞房，现代女医生陆漫穿越而来。委屈的某人，我要功成名就，我的生活我作主。陆漫，还你自由，我也自由……','isstar':'1','lang':'','musiccnt':'726','name':'金玉良医（完结）','new':'0','payvalue':'0','pic':'120/50/6/2193571523.jpg','pub':'2021-10-11','score':'0','showtime':'','spPrivilege':'0','startype':'有声小说','timing_online':'0000-00-00&nbsp;00:00:00','title':'现代女医生陆漫穿越到古代发生的事情','vip':'0'},{'DC_TARGETID':'28177105','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'10448','aartist':'','ad_subtype':'102,103,501,101,301','ad_type':'1,3,5','albumid':'28177105','artist':'我的青糖','artistid':'9650993','artistpic':'http://img4.kuwo.cn/star/starheads/120/40/93/1019968534.jpg','color':'[#FFE2F2C6,#FF85A476]','company':'独立发行','content_type':'0','falbum':'','fartist':'我的青糖','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/62/97/3136446870.jpg','id':'28177105','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/62/97/3136446870.jpg','info':'【字数：16万字】&lt;br&gt;裴子墨和丁辰是一对夫妻，妻子丁辰深爱裴子墨，但裴子墨难以忘怀初恋总是对她若即若离。婚后两年，裴子墨前女友于筝突然回国，使得他和丁辰原本就不稳定的婚姻更加雪上加霜。于筝当初背叛裴子墨，受伤后才意识到裴子墨的好，于是不择手段夺回了裴子墨。丁辰和裴子墨离婚后，裴子墨才意识到两年相处，他早已习惯有丁辰的陪伴。裴子墨决心重新赢回丁辰的心，但此时丁辰身边已经有了一位极其出色的追求者，前景不容乐观……','isstar':'1','lang':'','musiccnt':'80','name':'如果你是我的传说','new':'0','payvalue':'0','pic':'120/62/97/3136446870.jpg','pub':'2022-04-21','score':'0','showtime':'1979-10-05','spPrivilege':'0','startype':'有声小说','timing_online':'2022-05-01&nbsp;19:26:48','title':'','vip':'0'},{'DC_TARGETID':'12896662','DC_TARGETTYPE':'','PAY':'0','PLAYCNT':'2412258','aartist':'','ad_subtype':'','ad_type':'','albumid':'12896662','artist':'佛学听我的','artistid':'3651480','artistpic':'http://img4.kuwo.cn/star/starheads/120/21/42/3683883829.jpg','color':'[#FFD8F3F1,#FF719794]','company':'暂无','content_type':'0','falbum':'','fartist':'佛学听我的','finished':'0','hts_img':'https://img2.kuwo.cn/star/albumcover/240/93/41/3670973086.jpg','id':'12896662','img':'http://img2.sycdn.kuwo.cn/star/albumcover/240/93/41/3670973086.jpg','info':'佛书梵唱100篇','isstar':'1','lang':'普通话','musiccnt':'50','name':'佛书梵唱100篇','new':'0','payvalue':'0','pic':'120/93/41/3670973086.jpg','pub':'2020-02-24','score':'0','showtime':'','spPrivilege':'0','startype':'历史人文','timing_online':'0000-00-00&nbsp;00:00:00','title':'佛书梵唱100篇','vip':'0'}],'pn':'0','rn':'10','total':'257'}`;
-    // log(JSON5.parse(a));
     // console.log(typeof(CryptoJS));
     console.log("init_test_start");
     // print(模板);
@@ -279,7 +264,7 @@ function pre() {
 
 let rule = {};
 let vercode = typeof (pdfl) === 'function' ? 'drpy2.1' : 'drpy2';
-const VERSION = vercode + ' 3.9.51beta2 20240711';
+const VERSION = vercode + ' 3.9.50beta32 20240625';
 /** 已知问题记录
  * 1.影魔的jinjia2引擎不支持 {{fl}}对象直接渲染 (有能力解决的话尽量解决下，支持对象直接渲染字符串转义,如果加了|safe就不转义)[影魔牛逼，最新的文件发现这问题已经解决了]
  * Array.prototype.append = Array.prototype.push; 这种js执行后有毛病,for in 循环列表会把属性给打印出来 (这个大毛病需要重点排除一下)
@@ -2217,7 +2202,7 @@ function categoryParse(cateObj) {
             }
         }
         let new_url;
-        new_url = cheerio.jinja2(url, {fl: fl, fyclass: cateObj.tid});
+        new_url = cheerio.jinja2(url, {fl: fl});
         // console.log('jinjia2执行后的new_url类型为:'+typeof(new_url));
         url = new_url;
     }
@@ -3229,6 +3214,354 @@ function init(ext) {
         rule.tab_exclude = rule_tab_excludes.join('|');
 
         rule.类型 = rule.类型 || '影视'; // 影视|听书|漫画|小说
+        rule.url = rule.url || '';
+        rule.double = rule.double || false;
+        rule.homeUrl = rule.homeUrl || '';
+        rule.detailUrl = rule.detailUrl || '';
+        rule.searchUrl = rule.searchUrl || '';
+        rule.homeUrl = rule.host && rule.homeUrl ? urljoin(rule.host, rule.homeUrl) : (rule.homeUrl || rule.host);
+        rule.homeUrl = cheerio.jinja2(rule.homeUrl, {rule: rule});
+        rule.detailUrl = rule.host && rule.detailUrl ? urljoin(rule.host, rule.detailUrl) : rule.detailUrl;
+        rule.二级访问前 = rule.二级访问前 || '';
+        if (rule.url.includes('[') && rule.url.includes(']')) {
+            let u1 = rule.url.split('[')[0]
+            let u2 = rule.url.split('[')[1].split(']')[0]
+            rule.url = rule.host && rule.url ? urljoin(rule.host, u1) + '[' + urljoin(rule.host, u2) + ']' : rule.url;
+        } else {
+            rule.url = rule.host && rule.url ? urljoin(rule.host, rule.url) : rule.url;
+        }
+        if (rule.searchUrl.includes('[') && rule.searchUrl.includes(']') && !rule.searchUrl.includes('#')) {
+            let u1 = rule.searchUrl.split('[')[0]
+            let u2 = rule.searchUrl.split('[')[1].split(']')[0]
+            rule.searchUrl = rule.host && rule.searchUrl ? urljoin(rule.host, u1) + '[' + urljoin(rule.host, u2) + ']' : rule.searchUrl;
+        } else {
+            rule.searchUrl = rule.host && rule.searchUrl ? urljoin(rule.host, rule.searchUrl) : rule.searchUrl;
+        }
+
+        rule.timeout = rule.timeout || 5000;
+        rule.encoding = rule.编码 || rule.encoding || 'utf-8';
+        rule.search_encoding = rule.搜索编码 || rule.search_encoding || '';
+        rule.图片来源 = rule.图片来源 || '';
+        rule.图片替换 = rule.图片替换 || '';
+        rule.play_json = rule.hasOwnProperty('play_json') ? rule.play_json : [];
+        rule.pagecount = rule.hasOwnProperty('pagecount') ? rule.pagecount : {};
+        rule.proxy_rule = rule.hasOwnProperty('proxy_rule') ? rule.proxy_rule : '';
+        if (!rule.hasOwnProperty('sniffer')) { // 默认关闭辅助嗅探
+            rule.sniffer = false;
+        }
+        rule.sniffer = rule.hasOwnProperty('sniffer') ? rule.sniffer : '';
+        rule.sniffer = !!(rule.sniffer && rule.sniffer !== '0' && rule.sniffer !== 'false');
+
+        rule.isVideo = rule.hasOwnProperty('isVideo') ? rule.isVideo : '';
+        if (rule.sniffer && !rule.isVideo) { // 默认辅助嗅探自动增强嗅探规则
+            rule.isVideo = 'http((?!http).){12,}?\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|m4a|mp3)\\?.*|http((?!http).){12,}\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|m4a|mp3)|http((?!http).)*?video/tos*|http((?!http).)*?obj/tos*';
+        }
+
+        rule.tab_remove = rule.hasOwnProperty('tab_remove') ? rule.tab_remove : [];
+        rule.tab_order = rule.hasOwnProperty('tab_order') ? rule.tab_order : [];
+        rule.tab_rename = rule.hasOwnProperty('tab_rename') ? rule.tab_rename : {};
+
+        if (rule.headers && typeof (rule.headers) === 'object') {
+            try {
+                let header_keys = Object.keys(rule.headers);
+                for (let k of header_keys) {
+                    if (k.toLowerCase() === 'user-agent') {
+                        let v = rule.headers[k];
+                        console.log(v);
+                        if (['MOBILE_UA', 'PC_UA', 'UC_UA', 'IOS_UA', 'UA'].includes(v)) {
+                            rule.headers[k] = eval(v);
+                        }
+                    } else if (k.toLowerCase() === 'cookie') {
+                        let v = rule.headers[k];
+                        if (v && v.startsWith('http')) {
+                            console.log(v);
+                            try {
+                                v = fetch(v);
+                                console.log(v);
+                                rule.headers[k] = v;
+                            } catch (e) {
+                                console.log(`从${v}获取cookie发生错误:${e.message}`);
+                            }
+                        }
+                    }
+                }
+            } catch (e) {
+                console.log(`处理headers发生错误:${e.message}`);
+            }
+        }
+        // print(rule.headers);
+        rule_fetch_params = {'headers': rule.headers || false, 'timeout': rule.timeout, 'encoding': rule.encoding};
+        oheaders = rule.headers || {};
+        RKEY = typeof (key) !== 'undefined' && key ? key : 'drpy_' + (rule.title || rule.host);
+        pre(); // 预处理
+        init_test();
+    } catch (e) {
+        console.log(`init_test发生错误:${e.message}`);
+    }
+}
+
+let homeHtmlCache = undefined;
+
+/**
+ * js源获取首页分类和筛选特定返回对象中的函数
+ * @param filter 筛选条件字典对象
+ * @param home_html 指定了源码。无需内部再请求
+ * @param class_parse 自动匹配传入的模板的动态分类
+ * @returns {string}
+ */
+function home(filter, home_html, class_parse) {
+    console.log("home");
+    home_html = home_html || '';
+    class_parse = class_parse || '';
+    if (typeof (rule.filter) === 'string' && rule.filter.trim().length > 0) {
+        try {
+            let filter_json = ungzip(rule.filter.trim());
+            rule.filter = JSON.parse(filter_json);
+        } catch (e) {
+            rule.filter = {};
+        }
+    }
+    let homeObj = {
+        filter: rule.filter || false,
+        MY_URL: rule.homeUrl,
+        class_name: rule.class_name || '',
+        class_url: rule.class_url || '',
+        class_parse: class_parse || rule.class_parse || '',
+        cate_exclude: rule.cate_exclude,
+        home_html: home_html,
+    };
+    return homeParse(homeObj);
+}
+
+/**
+ * js源获取首页推荐数据列表特定返回对象中的函数
+ * @param params
+ * @returns {string}
+ */
+function homeVod(params) {
+    console.log("homeVod");
+    let homeVodObj = {
+        推荐: rule.推荐,
+        double: rule.double,
+        homeUrl: rule.homeUrl,
+        detailUrl: rule.detailUrl
+    };
+    return homeVodParse(homeVodObj)
+    // return "{}";
+}
+
+/**
+ * js源获取分类页一级数据列表特定返回对象中的函数
+ * @param tid 分类id
+ * @param pg 页数
+ * @param filter 当前选中的筛选条件
+ * @param extend 扩展
+ * @returns {string}
+ */
+function category(tid, pg, filter, extend) {
+    let cateObj = {
+        url: rule.url,
+        一级: rule.一级,
+        tid: tid,
+        pg: parseInt(pg),
+        filter: filter,
+        extend: extend
+    };
+    // console.log(JSON.stringify(extend));
+    return categoryParse(cateObj)
+}
+
+/**
+ * js源获取二级详情页数据特定返回对象中的函数
+ * @param vod_url 一级列表中的vod_id或者是带分类的自拼接 vod_id 如 fyclass$vod_id
+ * @returns {string}
+ */
+function detail(vod_url) {
+    let orId = vod_url;
+    let fyclass = '';
+    log('orId:' + orId);
+    if (vod_url.indexOf('$') > -1) {
+        let tmp = vod_url.split('$');
+        fyclass = tmp[0];
+        vod_url = tmp[1];
+    }
+    let detailUrl = vod_url.split('@@')[0];
+    let url;
+    if (!detailUrl.startsWith('http') && !detailUrl.includes('/')) {
+        url = rule.detailUrl.replaceAll('fyid', detailUrl).replaceAll('fyclass', fyclass);
+    } else if (detailUrl.includes('/')) {
+        url = urljoin(rule.homeUrl, detailUrl);
+    } else {
+        url = detailUrl
+    }
+    let detailObj = {
+        orId: orId,
+        url: url,
+        二级: rule.二级,
+        二级访问前: rule.二级访问前,
+        detailUrl: detailUrl,
+        fyclass: fyclass,
+        tab_exclude: rule.tab_exclude,
+    }
+    return detailParse(detailObj)
+}
+
+/**
+ * js源选集按钮播放点击事件特定返回对象中的函数
+ * @param flag 线路名
+ * @param id 播放按钮的链接
+ * @param flags 全局配置的flags是否需要解析的标识列表
+ * @returns {string}
+ */
+function play(flag, id, flags) {
+    let playObj = {
+        url: id,
+        flag: flag,
+        flags: flags
+    }
+    return playParse(playObj);
+}
+
+/**
+ * js源搜索返回的数据列表特定返回对象中的函数
+ * @param wd 搜索关键字
+ * @param quick 是否来自快速搜索
+ * @returns {string}
+ */
+function search(wd, quick, pg) {
+    if (rule.search_encoding) {
+        if (rule.search_encoding.toLowerCase() !== 'utf-8') {
+            // 按搜索编码进行编码
+            wd = encodeStr(wd, rule.search_encoding);
+        }
+    } else if (rule.encoding && rule.encoding.toLowerCase() !== 'utf-8') {
+        // 按全局编码进行编码
+        wd = encodeStr(wd, rule.encoding);
+    }
+    let searchObj = {
+        searchUrl: rule.searchUrl,
+        搜索: rule.搜索,
+        wd: wd,
+        //pg: pg,
+        pg: pg || 1,
+        quick: quick,
+    };
+    // console.log(JSON.stringify(searchObj));
+    return searchParse(searchObj)
+}
+
+/**
+ * js源本地代理返回的数据列表特定返回对象中的函数
+ * @param params 代理链接参数比如 /proxy?do=js&url=https://wwww.baidu.com => params就是 {do:'js','url':'https://wwww.baidu.com'}
+ * @returns {*}
+ */
+function proxy(params) {
+    if (rule.proxy_rule && rule.proxy_rule.trim()) {
+        rule.proxy_rule = rule.proxy_rule.trim();
+    }
+    if (rule.proxy_rule.startsWith('js:')) {
+        rule.proxy_rule = rule.proxy_rule.replace('js:', '');
+    }
+    let proxyObj = {
+        params: params,
+        proxy_rule: rule.proxy_rule
+    };
+    return proxyParse(proxyObj)
+}
+
+
+/**
+ * 是否启用辅助嗅探功能,启用后可以根据isVideo函数进行手动识别为视频的链接地址。默认为false
+ * @returns {*|boolean|boolean}
+ */
+function sniffer() {
+    let enable_sniffer = rule.sniffer || false;
+    if (enable_sniffer) {
+        // log('准备执行辅助嗅探代理规则:\n'+rule.isVideo);
+        log('开始执行辅助嗅探代理规则...');
+    }
+    return enable_sniffer
+}
+
+/**
+ * 启用辅助嗅探功能后根据次函数返回的值识别地址是否为视频，返回true/false
+ * @param url
+ */
+function isVideo(url) {
+    let t = 0;
+    let is_video;
+    if (rule.isVideo && rule.isVideo.trim()) {
+        is_video = rule.isVideo.trim();
+    }
+    if (is_video.startsWith('js:')) {
+        is_video = is_video.replace('js:', '');
+        t = 1;
+    }
+    let isVideoObj = {
+        url: url,
+        isVideo: is_video,
+        t: t,
+    };
+    let result = isVideoParse(isVideoObj);
+    if (result) {
+        log('成功执行辅助嗅探规则并检测到视频地址:\n' + rule.isVideo);
+    }
+    return result
+}
+
+/**
+ * 获取规则
+ * @returns {{}}
+ */
+function getRule(key) {
+    return key ? rule[key] || '' : rule
+}
+
+function DRPY() {//导出函数
+    return {
+        runMain: runMain,
+        getRule: getRule,
+        init: init,
+        home: home,
+        homeVod: homeVod,
+        category: category,
+        detail: detail,
+        play: play,
+        search: search,
+        proxy: proxy,
+        sniffer: sniffer,
+        isVideo: isVideo,
+        fixAdM3u8Ai: fixAdM3u8Ai,
+    }
+}
+
+/**
+ * 导出函数无法简写成下面的形式:
+
+ export default {
+  ...DRPY,
+  DRPY
+ }
+
+ */
+
+// 导出函数对象
+export default {
+    runMain,
+    getRule,
+    init,
+    home,
+    homeVod,
+    category,
+    detail,
+    play,
+    search,
+    proxy,
+    sniffer,
+    isVideo,
+    fixAdM3u8Ai,
+    DRPY,
+}��型 || '影视'; // 影视|听书|漫画|小说
         rule.url = rule.url || '';
         rule.double = rule.double || false;
         rule.homeUrl = rule.homeUrl || '';

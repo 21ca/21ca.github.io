@@ -1,5 +1,7 @@
-手机版多仓库
+手机版单仓库
 http://127.0.0.1:9978/file/tvboxqy/dc.json
+TV版单仓库
+clan://localhost/tvboxqy/dc.json
 TV版多仓库
 clan://localhost/tvboxqy/2.json
 
@@ -8,11 +10,11 @@ clan://localhost/tvboxqy/2.json
 本地包不需要解压直接扫码推送上传
 
 存储权限要永久打开 这个功能 再用软件一键推送才可以用 测试有没有存储权限就备份数据一下 可以看到备份数据 一般软件app推送token码是成功 
-玩我哥哥  玩偶哥哥
+
 打开存储权限
 token一键推送app安装在手机 输入注册账号 点击 获取电视IP 2自动获取 （显示出局域网IP）再点下面两个推送  电视会显示推送token
 
 token一键推送 下载
 （ 关注公众号 “开心软件”获取链接
  回复token一键推送）
-https://docs.qq.com/doc/DYktmVmF1QXJZRmlh
+c/DYktmVmF1QXJZRmlh
