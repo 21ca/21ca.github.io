@@ -1,0 +1,18 @@
+{
+	items:[
+		{
+			name: "AAAA",
+			url: "https://21ca.github.io/apps/a.apk"
+			
+		}, {
+			name: "BBBB",
+			url: "https://21ca.github.io/apps/b.apk"
+		},{
+			name: "CCCC",
+			url: "https://21ca.github.io/apps/a.apk"
+		},{
+			name: "DDDD",
+			url: "https://21ca.github.io/apps/a.apk"
+		}
+	]
+}
