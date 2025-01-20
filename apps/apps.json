@@ -13,6 +13,9 @@
 		},{
 			name: "Test Application",
 			url: "https://21ca.github.io/apps/d.apk"
+		},{
+			name: "影视仓",
+			url: "https://21ca.github.io/tv/tv.apk"
 		}
 	]
 }
