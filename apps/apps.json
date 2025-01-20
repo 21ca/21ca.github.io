@@ -1,18 +1,18 @@
 {
 	items:[
 		{
-			name: "AAAA",
+			name: "TV Application2",
 			url: "https://21ca.github.io/apps/a.apk"
 			
 		}, {
-			name: "BBBB",
+			name: "Test Application",
 			url: "https://21ca.github.io/apps/b.apk"
 		},{
-			name: "CCCC",
-			url: "https://21ca.github.io/apps/a.apk"
+			name: "Test Application",
+			url: "https://21ca.github.io/apps/c.apk"
 		},{
-			name: "DDDD",
-			url: "https://21ca.github.io/apps/a.apk"
+			name: "Test Application",
+			url: "https://21ca.github.io/apps/d.apk"
 		}
 	]
 }
