@@ -1,17 +1,17 @@
 {
 	items:[
 		{
-			name: "TV Application2",
+			name: "APP工具",
 			url: "https://21ca.github.io/apps/app-release.apk"
 			
 		}, {
-			name: "Test Application",
+			name: "测试APP",
 			url: "https://21ca.github.io/apps/b.apk"
 		},{
-			name: "Test Application",
+			name: "测试APP",
 			url: "https://21ca.github.io/apps/c.apk"
 		},{
-			name: "Test Application",
+			name: "测试APP",
 			url: "https://21ca.github.io/apps/d.apk"
 		},{
 			name: "影视仓",
