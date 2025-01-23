@@ -7,6 +7,9 @@
 		}, {
 			name: "我的电视",
 			url: "https://github.com/lizongying/my-tv/releases/download/v2.1.8/my-tv-v2.1.8.apk"
+		}, {
+			name: "Our TV",
+			url: "https://github.com/andandroidor/ourtv/releases/download/3.6.6/OurTV_3.6.6_android_tv.apk"
 		},{
 			name: "应用管家",
 			url: "https://21ca.github.io/apps/guanjia.apk"
