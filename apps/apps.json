@@ -11,8 +11,11 @@
 			name: "电视家v9",
 			url: "https://21ca.github.io/apps/dsj_v9.apk"
 		},{
-			name: "测试APP",
-			url: "https://21ca.github.io/apps/d.apk"
+			name: "应用管家",
+			url: "https://21ca.github.io/apps/guanjia.apk"
+		},{
+			name: "野草助手",
+			url: "https://21ca.github.io/apps/hd.fun.yecao.helper_2.2.0_1865962583493300224_yecao.net.apk"
 		},{
 			name: "影视仓",
 			url: "https://21ca.github.io/tv/tv.apk"
