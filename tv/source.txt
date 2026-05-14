@@ -4,6 +4,7 @@
         { "url": "https://tvbox.catvod.com/catvod.json", "name": "自用省心" },
         { "url": "https://tvbox.catvod.com/jsm.json", "name": "PG" },
         { "url": "https://tvbox.catvod.com/FongMi.json", "name": "真心" },
+        { "url": "https://21ca.github.io/zx20260425/FongMi.json", "name": "真心本地" },
         { "url": "https://tvbox.catvod.com/xs/api.json", "name": "潇洒" }
     ]
 }
