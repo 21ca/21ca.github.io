@@ -1,6 +1,6 @@
 { 
     "urls": [
-        { "url": "http://www.饭太硬.com/tv", "name": "饭太硬" },
+        { "url": "http://www.饭太硬.net/tv", "name": "饭太硬备用" },
         { "url": "https://tvbox.catvod.com/catvod.json", "name": "自用省心" },
         { "url": "https://tvbox.catvod.com/jsm.json", "name": "PG" },
         { "url": "https://tvbox.catvod.com/FongMi.json", "name": "真心" },
