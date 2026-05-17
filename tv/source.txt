@@ -4,7 +4,21 @@
         { "url": "https://tvbox.catvod.com/catvod.json", "name": "自用省心" },
         { "url": "https://tvbox.catvod.com/jsm.json", "name": "PG" },
         { "url": "https://tvbox.catvod.com/FongMi.json", "name": "真心" },
-        { "url": "https://21ca.github.io/zx20260425/FongMi.json", "name": "真心本地" },
-        { "url": "https://tvbox.catvod.com/xs/api.json", "name": "潇洒" }
+        { "url": "https://tvbox.catvod.com/xs/api.json", "name": "潇洒" },
+        
+        { "url": "https://21ca.github.io/zx20260425/FongMi.json", "name": "真心｜本地仓库" },
+        
+{"name":"小米｜本地仓库","url":"https://21ca.github.io/xf20260509/小米/api.json"},
+{"name":"Easy｜本地仓库","url":"https://21ca.github.io/xf20260509/Easy/Easy.json"},
+{"name":"幸福年年｜本地仓库","url":"https://21ca.github.io/xf20260509/幸福年年/幸福年年.json"},
+{"name":"小虎斑｜本地仓库","url":"https://21ca.github.io/xf20260509/小虎斑/api.json"},
+{"name":"香雅情｜本地仓库","url":"https://21ca.github.io/xf20260509/香雅情/api.json"},
+{"name":"王二小｜本地仓库","url":"https://21ca.github.io/xf20260509/王二小/api.json"},
+{"name":"饭太硬｜本地仓库","url":"https://21ca.github.io/xf20260509/饭太硬/api.json"},
+{"name":"欧歌｜本地仓库","url":"https://21ca.github.io/xf20260509/欧歌/api.json"},
+{"name":"宝盒｜宝盒在线2","url":"https://3043.kstore.space/bhvip/bh/bh2.json"},
+{"name":"潇洒｜本地仓库","url":"https://21ca.github.io/xf20260509/潇洒/api.json"},
+{"name":"摸鱼儿｜本地仓库","url":"https://21ca.github.io/xf20260509/摸鱼儿/moyu.json"},
+{"name":"戏曲音乐｜本地仓库","url":"https://21ca.github.io/xf20260509/戏曲音乐/api.json"},
     ]
 }
