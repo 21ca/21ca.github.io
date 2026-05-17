@@ -19,6 +19,6 @@
 {"name":"宝盒｜宝盒在线2","url":"https://3043.kstore.space/bhvip/bh/bh2.json"},
 {"name":"潇洒｜本地仓库","url":"https://21ca.github.io/xf20260509/潇洒/api.json"},
 {"name":"摸鱼儿｜本地仓库","url":"https://21ca.github.io/xf20260509/摸鱼儿/moyu.json"},
-{"name":"戏曲音乐｜本地仓库","url":"https://21ca.github.io/xf20260509/戏曲音乐/api.json"},
+{"name":"戏曲音乐｜本地仓库","url":"https://21ca.github.io/xf20260509/戏曲音乐/api.json"}
     ]
 }
